@@ -1,0 +1,47 @@
+
+#Application Properties
+server.port:8080
+spring.application.name=APPNAME
+
+#JPA ORM Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+#LOGGING
+#logging.level.org.hibernate.SQL=debug
+#logging.level.org.hibernate.type.descriptor.sql=trace
+#logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+
+# Oracle Connection
+#spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+#spring.datasource.url=jdbc:oracle:thin:@10.20.212.104:1534:domibc
+#spring.datasource.username=OMIBC
+#spring.datasource.password=*******
+
+# MySQL Connection
+spring.datasource.url=jdbc:mysql://localhost:3306/oantech?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=IMMANUEL
+
+#KAFKA
+#spring.kafka.bootstrap-servers=deveaikafka01:19092,deveaikafka02:19092,deveaikafka03:19092
+#spring.kafka.listener.ack-mode=manual
+#spring.kafka.consumer.group-id=kbb.group.general
+#spring.kafka.consumer.enable-auto-commit=false
+
+
+#KAFKA Authentication
+#spring.kafka.properties.security.protocol=SASL_PLAINTEXT
+#spring.kafka.properties.sasl.mechanism=PLAIN
+#spring.kafka.properties.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username="klik_bca_bisnis" password="1F883DD50A152096012A54F9627F7830";
+
+
+#spring.kafka.consumer.auto-offset-reset=latest
+#spring.kafka.consumer.properties.spring.json.trusted.packages=sample.kafka
+#spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+#spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
+
+
+#KAFKA TOPIC
+#kafka.topic.orm=topic.kbb.service_notification_email
+#kafka.topic.sp=topic.kbb.service_notification_sms
